@@ -48,6 +48,18 @@
 - 같은 그림을 찾으면 카드가 뒤집어지면서 사라집니다.
 
 ---
+## 🟢 게임 시작 화면 (GIF)
+![시작화면](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/CardGif/StartScene2.gif?raw=true)
+
+게임을 켜면 StartScene에서 시작됩니다. StartScene에 있는 구조하기! 버튼을 누르면 MainScene으로 이동합니다. MainScene으로 이동하게 만든 로직은 RetryBtn스크립트(SceneManager.LoadScene("MainScene");
+)를 활용하여 구조하기! 버튼에 RetryBtn스크립트를 이용하여 MainScene으로 이동하게 했습니다.
+
+### 🎉 게임 성공 화면
+![성공 화면](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/CardImages/Finish.png?raw=true)
+
+게임을 클리어 하면 구조성공! 텍스트가 나오고 팀원들의 카드가 나옵니다. 구조성공! 을 누르면 RetryBtn스크립트가 작동해서 MainScene으로 이동합니다. 
+
+---
 # 🔧 구현 기능
 
 ### ⏳ 제한 시간 시스템
