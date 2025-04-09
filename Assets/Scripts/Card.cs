@@ -25,45 +25,29 @@ public class Card : MonoBehaviour
         
     }
 
-    //파일명을 변경하지 않고 이미지를 불러오는 것을 코드로 짰습니다.
+    //파일명 유지 (파일명이 "name"{0,1}로 
     public void Setting(int number)
     {
         idx = number;
 
-        //sprite 초기화
-        Sprite sprite = null;
+        string[] names = { "Garam", "Garam", "Jongmin", "Jongmin", "Seongdeuk", "Seongdeuk", "Sanghun", "Sanghun", "Yeonjun", "Yeonjun" };
 
-        if (idx == 0 || idx == 1)
+        if (idx >= 0 && idx < names.Length)
         {
-            sprite = Resources.Load<Sprite>($"Garam{idx}");
-        }
-        else if (idx == 2 || idx == 3)
-        {
-            //idx를 2로 나눈 나머지 값을 변수로 지정.
-            //idx 값에 따라 0 또는 1로 할당하여 이미지를 sprtie에 입력.
-            int spriteNum = idx % 2;
-            sprite = Resources.Load<Sprite>($"Jongmin{spriteNum}");
-        }
-        else if (idx == 4 || idx == 5)
-        {
-            int spriteNum = idx % 2;
-            sprite = Resources.Load<Sprite>($"Seongdeuk{spriteNum}");
-        }
-        else if (idx == 6 || idx == 7)
-        {
-            int spriteNum = idx % 2;
-            sprite = Resources.Load<Sprite>($"Sanghun{spriteNum}");
-        }
-        else if (idx == 8 || idx == 9)
-        {
-            int spriteNum = idx % 2;
-            sprite = Resources.Load<Sprite>($"Yeonjun{spriteNum}");
-        }
+            //삼항연산자 사용, idx가 0 혹은 1이면 그대로, 아니라면 %2 연산.
+            int spriteNum = (idx <= 1) ? idx : idx % 2;
 
-        //유니티 내 frontImage에 sprite에 담은 이미지 할당.
-        if (sprite != null)
-        {
-            frontImage.sprite = sprite;
+            //이미지 이름 가져오기
+            string name = names[idx];
+
+            //스프라이트 로드
+            Sprite sprite = Resources.Load<Sprite>($"{name}{spriteNum}");
+
+            //유니티 내 frontImage에 sprite에 담은 이미지 할당
+            if (sprite != null)
+            {
+                frontImage.sprite = sprite;
+            }
         }
     }
 
