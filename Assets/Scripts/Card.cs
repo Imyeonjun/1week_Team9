@@ -25,7 +25,7 @@ public class Card : MonoBehaviour
         
     }
 
-    //파일명 유지 (파일명이 "name"{0,1}로 
+    //파일명 유지 (파일명이 {name}{0,1}이라는 조건 하에)
     public void Setting(int number)
     {
         idx = number;
