@@ -7,7 +7,7 @@
 ---
 
 ## 👥 조원
-| 이름       | 담당역할  | Github주소 |
+| 이름       | 담당 역할  | Github주소 |
 |------------|------------|-----------|
 | 조성득 |  	README 작성 및 기본 구조 구현  | https://github.com/Duek1/Duek2 |
 | 김가람 |   스타트 씬 및 사운드 구현 | https://github.com/garamzui |
@@ -29,8 +29,8 @@
 
 | 초기화면 | 카드 일부 공개 | 정답 매칭 성공 |
 |-----------|----------------|----------------|
-| ![start](./카드뒤집기1.png) | ![play1](./카드뒤집기2.png) | ![success](./카드뒤집기3.png) |
-
+| [![1](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/카드뒤집기1.png?raw=true)](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/카드뒤집기1.png) | [![2](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/카드뒤집기2.png?raw=true)](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/카드뒤집기2.png) | [![3](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/카드뒤집기3.png?raw=true)](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/카드뒤집기3.png) |
+---
 ## 🔧 구현 기능
 
 ### ⏳ 제한 시간 시스템
