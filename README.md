@@ -1,5 +1,7 @@
-# 🎮 1week_Team9
+
 <div align="center">
+  
+# 🎮 1week_Team9
 
 내일배움캠프 Unity 9기 - **1주차 미니 프로젝트** (9조)  
 이 저장소는 9조의 미니 프로젝트 개발을 위한 GitHub 저장소입니다.
