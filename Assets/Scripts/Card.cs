@@ -6,6 +6,7 @@ public class Card : MonoBehaviour
 {
 
     public int idx = 0;
+    public int spriteNum = 0;
 
     public GameObject front;
     public GameObject back;
@@ -35,7 +36,7 @@ public class Card : MonoBehaviour
         if (idx >= 0 && idx < names.Length)
         {
             //삼항연산자 사용, idx가 0 혹은 1이면 그대로, 아니라면 %2 연산.
-            int spriteNum = (idx <= 1) ? idx : idx % 2;
+            spriteNum = (idx <= 1) ? idx : idx % 2;
 
             //이미지 이름 가져오기
             string name = names[idx];
