@@ -6,7 +6,7 @@ public class Title : MonoBehaviour
     public SpriteRenderer title;
     public Text titleText; // °Á Legacy Text ≈∏¿‘!
 
-    public void SettingT(int tt, string label, object spriteNum)
+    public void SettingT(int tt, string label, int spriteNum)
     {
         title.sprite = Resources.Load<Sprite>($"{name}{spriteNum}");
         titleText.text = label;
