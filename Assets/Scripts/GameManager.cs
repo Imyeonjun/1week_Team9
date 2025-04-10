@@ -90,16 +90,10 @@ public class GameManager : MonoBehaviour
     }
     public void Matched()
     {
-
         if (firstCard.idx == secondCard.idx)
         {
-
-           
-
-
            audioSource.PlayOneShot(clip);
             firstCard.DestroyCard();
-
             secondCard.DestroyCard();
             cardCount -= 2;
             if (cardCount == 0)
@@ -111,7 +105,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            firstCard.CloseCard(); // 다를 경우 일정 시간 후 뒤집힘
+            firstCard.CloseCard();
             secondCard.CloseCard();
         }
         firstCard = null;   
