@@ -1,14 +1,16 @@
 using UnityEngine;
-using UnityEngine.UI; // ← 반드시 이거 있어야 해!
+using UnityEngine.UI;
 
 public class Title : MonoBehaviour
 {
     public SpriteRenderer title;
-    public Text titleText; // ← Legacy Text 타입!
+    public Text titleText;
 
-    public void SettingT(int tt, string label)
+    // 함수에 지정된 매개 변수 int tt와 string label은 호출하는 쪽에서 지정할 것.
+    // 함수 안의 로직은 이 매개 변수를 이용할 수 있어야 할 것.
+    public void SettingT(string name, int tt, string label)
     {
-        title.sprite = Resources.Load<Sprite>($"team{tt}");
+        title.sprite = Resources.Load<Sprite>($"{name}{tt}");
         titleText.text = label;
     }
 }

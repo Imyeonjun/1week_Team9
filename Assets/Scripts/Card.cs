@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Card : MonoBehaviour
 {
+    public static string[] names = { "Garam", "Garam", "Jongmin", "Jongmin", "Seongdeuk", "Seongdeuk", "Sanghun", "Sanghun", "Yeonjun", "Yeonjun" };
 
     public int idx = 0;
 
@@ -12,19 +13,17 @@ public class Card : MonoBehaviour
     public Animator anim;
 
     public SpriteRenderer frontImage;
-    public AudioClip clip;
-    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     //파일명 유지 (파일명이 {name}{0,1}이라는 조건 하에)
@@ -32,14 +31,15 @@ public class Card : MonoBehaviour
     {
         idx = number;
 
-        string[] names = { "Garam", "Garam", "Jongmin", "Jongmin", "Seongdeuk", "Seongdeuk", "Sanghun", "Sanghun", "Yeonjun", "Yeonjun" };
-
         if (idx >= 0 && idx < names.Length)
         {
-            //삼항연산자 사용, idx가 0 혹은 1이면 그대로, 아니라면 %2 연산.
-            int spriteNum = (idx <= 1) ? idx : idx % 2;
+            //idx가 짝수인지 홀수인지 판단하여 spriteNum에 저장.
+            //이 때문에 파일명의 마지막이 0 또는 1로 끝나야 함.
 
-            //이미지 이름 가져오기
+            int spriteNum = idx % 2;
+
+            //정해진 idx에 names 배열의 문자열이 대응됨.
+            //그걸 변수 name에 저장 (idx에 따라 이름이 바뀜)
             string name = names[idx];
 
             //스프라이트 로드
@@ -59,7 +59,6 @@ public class Card : MonoBehaviour
 
         front.SetActive(true);
         back.SetActive(false);
-        audioSource.PlayOneShot(clip);
 
         if (GameManager.Instance.firstCard == null)
         {
@@ -86,13 +85,10 @@ public class Card : MonoBehaviour
         Invoke("CloseCardInvoke", 1.0f);
     }
 
-
-
-
     public void CloseCardInvoke()
     {
         anim.SetBool("isOpen", false);
         front.SetActive(false);
-        back.SetActive(true );
+        back.SetActive(true);
     }
 }
