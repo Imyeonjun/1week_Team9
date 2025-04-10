@@ -90,14 +90,11 @@ public class GameManager : MonoBehaviour
     }
     public void Matched()
     {
-        if (firstCard.idx == secondCard.idx)
+        if (firstCard.idx == secondCard.idx) // <<<<<<< HEAD
         {
-<<<<<<< HEAD
             firstCard.DestroyCard(); // 첫번째 카드와 두번째 카드가 일치하면 파괴
-=======
            audioSource.PlayOneShot(clip);
             firstCard.DestroyCard();
->>>>>>> e6142ec95e9f850e9d0fa1eaff19330ed6e1d89b
             secondCard.DestroyCard();
             cardCount -= 2;
             if (cardCount == 0)
