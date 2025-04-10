@@ -20,7 +20,6 @@ public class StartSceneBoard : MonoBehaviour
 
     void Start()
     {
-        Card.card();
 
         //이후 랜덤으로 섞기
         sttImg = spriteNum.OrderBy(x => Random.Range(0f, 9.0f)).ToArray(); // 카드 순서 랜덤
@@ -33,6 +32,8 @@ public class StartSceneBoard : MonoBehaviour
 
     void SpawnCard()
     {
+        Card.card();
+
         // 부모 오브젝트 생성 및 위치 조정
         GameObject tbd = Instantiate(stboard, this.transform);
         float y = 0 - (2 * cardIndex);
@@ -40,7 +41,7 @@ public class StartSceneBoard : MonoBehaviour
 
         // 자식 카드 생성 + 이미지 설정 + 텍스트 설정
         GameObject tit = Instantiate(startI, tbd.transform);
-        tit.GetComponent<Card>().Setting(0);
+        tit.GetComponent<Title>().Setting(0);
 
         cardIndex++;
     }
