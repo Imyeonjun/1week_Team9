@@ -24,6 +24,9 @@ public class StartSceneBoard : MonoBehaviour
 
     void SpawnCard()
     {
+        // Card 스크립트에서 names 배열을 가져오고 랜덤으로 섞어서, 첫 문자열을 매개 변수로 쓰기
+        string selectedName = null; //섞은 배열의 첫 문자열을 넣을 변수 (혹시 모르니 비워주기)
+        
         // 배열을 섞는 것 대신에, i에 0부터 끝까지 랜덤한 수를 받고,
         int i = UnityEngine.Random.Range(0, Card.names.Length);
 
