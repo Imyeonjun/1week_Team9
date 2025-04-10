@@ -37,7 +37,6 @@ public class StartSceneBoard : MonoBehaviour
         // 파일명 뒤에 0, 1을 판단할 변수를 만들어서 Title.SettingT의 매개 변수로 쓰기
         // (image 변수에 0, 1의 랜덤한 값을 넣어서 클리어)
         int image = UnityEngine.Random.Range(0, 2);
-        Debug.Log($"{selected}{image}");
 
         // 부모 오브젝트 생성 및 위치 조정
         GameObject tbd = Instantiate(stboard, this.transform);
