@@ -31,6 +31,10 @@
 ---
 ## 📸 게임 화면 예시
 
+![게임화면예시](https://github.com/Imyeonjun/1week_Team9/blob/main/CardGame.gif?raw=true)
+
+---
+
 | 초기화면 | 카드 일부 공개 | 정답 매칭 성공 |
 |-----------|----------------|----------------|
 | [![1](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/카드뒤집기1.png?raw=true)](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/카드뒤집기1.png) | [![2](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/카드뒤집기2.png?raw=true)](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/카드뒤집기2.png) | [![3](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/카드뒤집기3.png?raw=true)](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/카드뒤집기3.png) |
@@ -39,7 +43,7 @@
 
 ## 📽️ 게임 시연 예시
 
-![카드 뒤집기 게임 예시](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/CardGame.gif?raw=true)
+![게임 시작 GIF](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/CardGif/CardGame2.gif?raw=true)
 
 - 제한 시간 내에 같은 이미지를 맞추는 카드 뒤집기 게임입니다.
 - 같은 그림을 찾으면 카드가 뒤집어지면서 사라집니다.
