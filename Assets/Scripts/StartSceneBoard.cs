@@ -12,6 +12,8 @@ public class StartSceneBoard : MonoBehaviour
     string[] textLabels = { "구", "조", "요", "청", "!" }; // 표시할 텍스트
     int cardIndex = 0;            // 현재 몇 번째 카드인지 추적
 
+    private int spriteNum;
+
     void Start()
     {
         int[] raw = { 0, 1,2,3,4,5,6,7,8,9 };
@@ -32,7 +34,7 @@ public class StartSceneBoard : MonoBehaviour
 
         // 자식 카드 생성 + 이미지 설정 + 텍스트 설정
         GameObject tit = Instantiate(startI, tbd.transform);
-        tit.GetComponent<Title>().SettingT(sttimg[cardIndex], textLabels[cardIndex]);
+        tit.GetComponent<Title>().SettingT(sttimg[cardIndex], textLabels[cardIndex], spriteNum);
 
         cardIndex++;
     }
