@@ -15,6 +15,12 @@ public class GameManager : MonoBehaviour
     public GameObject endTxt;
     public GameObject goodendTxt;
 
+    AudioSource audioSource;
+    public AudioClip clip;
+    public AudioClip clipfail;
+    public AudioClip clipcomplete;
+    private bool hasPlayed = false;
+
     public int cardCount = 0;
     float time = 40.0f;
 
@@ -30,6 +36,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1.0f;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -37,8 +44,11 @@ public class GameManager : MonoBehaviour
     {
         time -= Time.deltaTime;
         timetxt.text = time.ToString("N2");
-        if (time <= 0.0f)
+        if (time <= 0.0f&&!hasPlayed)
         {
+            audioSource.PlayOneShot(clipfail);
+            hasPlayed = true;
+            
             endTxt.SetActive(true);
 
             Card[] cards = FindObjectsOfType<Card>();
@@ -50,8 +60,10 @@ public class GameManager : MonoBehaviour
 
             Time.timeScale = 0.0f;
         }
-        else if(cardCount == 0)
+        else if(cardCount == 0&&!hasPlayed)
         {
+            audioSource.PlayOneShot(clipcomplete);
+            hasPlayed = true;
             goodendTxt.SetActive(true);
             Card[] cards = FindObjectsOfType<Card>();
             foreach (Card card in cards)
@@ -72,6 +84,7 @@ public class GameManager : MonoBehaviour
     {
         if (firstCard.idx == secondCard.idx)
         {
+           audioSource.PlayOneShot(clip);
             firstCard.DestroyCard();
             secondCard.DestroyCard();
             cardCount -= 2;

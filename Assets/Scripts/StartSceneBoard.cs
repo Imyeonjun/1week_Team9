@@ -20,9 +20,14 @@ public class StartSceneBoard : MonoBehaviour
 
     void Start()
     {
+<<<<<<< HEAD
 
         //ÀÌÈÄ ·£´ýÀ¸·Î ¼¯±â
         sttImg = spriteNum.OrderBy(x => Random.Range(0f, 9.0f)).ToArray(); // Ä«µå ¼ø¼­ ·£´ý
+=======
+        int[] raw = { 0, 1,2,3,4,5,6,7,8,9 };
+        sttimg = raw.OrderBy(x => Random.Range(0f, 9.0f)).ToArray(); // Ä«µå ¼ø¼­ ·£´ý
+>>>>>>> main
 
         for (int i = 0; i < 5; i++)
         {
