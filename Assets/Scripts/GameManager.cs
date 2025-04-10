@@ -11,18 +11,12 @@ public class GameManager : MonoBehaviour
     public Card firstCard;
     public Card secondCard;
 
-
-
-
     public Text timetxt;
     public GameObject endTxt;
     public GameObject goodendTxt;
 
     public int cardCount = 0;
-     float time = 40.0f;
-
-
-
+    float time = 40.0f;
 
     private void Awake()
     {
@@ -31,8 +25,6 @@ public class GameManager : MonoBehaviour
             Instance = this;
         }
     }
-
-
 
     // Start is called before the first frame update
     void Start()

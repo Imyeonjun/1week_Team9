@@ -1,10 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Card : MonoBehaviour
 {
+    //이미지 추가될 경우 배열 수정하기
+    public static Action card;
 
+    public static int spriteNum;
     public int idx = 0;
 
     public GameObject front;
@@ -13,7 +17,11 @@ public class Card : MonoBehaviour
 
     public SpriteRenderer frontImage;
 
-    // Start is called before the first frame update
+    private void Awake()
+    {
+        card = () => { Setting(0); };
+    }
+
     void Start()
     {
         
@@ -34,8 +42,7 @@ public class Card : MonoBehaviour
 
         if (idx >= 0 && idx < names.Length)
         {
-            //삼항연산자 사용, idx가 0 혹은 1이면 그대로, 아니라면 %2 연산.
-            int spriteNum = (idx <= 1) ? idx : idx % 2;
+            spriteNum = idx % 2;
 
             //이미지 이름 가져오기
             string name = names[idx];
