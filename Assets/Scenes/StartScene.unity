@@ -1183,6 +1183,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stboard: {fileID: 930753760}
   startI: {fileID: 4485028809763427078, guid: 439fd3d892d4ac44a9b4bcfcb7476ee4, type: 3}
+<<<<<<< Updated upstream
+=======
+  sttimg: 
+  textLabels:
+  - "\uAD6C"
+  - "\uC870"
+  - "\uC694"
+  - "\uCCAD"
+  - '!'
+  cardIndex: 0
+>>>>>>> Stashed changes
 --- !u!4 &2102821563
 Transform:
   m_ObjectHideFlags: 0
