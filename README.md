@@ -63,10 +63,13 @@
 - 게임 상단에 남은 시간 표시
 - 시간이 0이 되면 자동으로 게임 종료
 
+![제한시간](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/CardImages/제한시간시스템.png?raw=true)
 
 ### 📦 카드 생성 및 배치
 - 원하는 갯수만큼 카드 자동 생성
 - 사전에 등록된 이미지 중 무작위로 카드에 2장씩 배치
+
+![카드생성](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/CardImages/카드생성및배치.png?raw=true)
 
 ### 🌀 카드 뒤집기 애니메이션
 -  클릭 시 카드가 회전하며 이미지 표시
@@ -75,10 +78,14 @@
 ### ✅ 매칭 판정 로직
 - 두 장의 카드가 동일 이미지일 경우 고정
 - 다를 경우 일정 시간 후 다시 뒤집힘
+- 
+![매칭판정](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/CardImages/매칭판정로직.png?raw=true)
 
 ### 🏁 게임 클리어 조건
 - 제한 시간 내 모든 카드 짝 맞추면 클리어
 - 클리어 시 메시지/애니메이션 출력
+
+  ![게임클리어](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/CardImages/게임클리어조건.png?raw=true)
 
 ### 🔊 사운드 효과
 - 게임 시작 시 효과음 재생
@@ -87,6 +94,8 @@
 ### 🗂️ 이미지 관리 코드
 - 이미지 리스트를 스크립트에서 관리 및 랜덤 셔플
 - 리소스 최적화를 위한 분리 로딩 구조
+
+![이미지관리](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/CardImages/이미지관리코드.png?raw=true)
 
 ### 🌟 스테이지 선택 / 해금 시스템
 - 기본 스테이지 외 추가 난이도 구현
