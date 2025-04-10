@@ -14,7 +14,7 @@ public class StartSceneBoard : MonoBehaviour
 
     void Start()
     {
-        int[] raw = { 0, 2, 4, 6, 7 };
+        int[] raw = { 0, 1,2,3,4,5,6,7,8,9 };
         sttimg = raw.OrderBy(x => Random.Range(0f, 9.0f)).ToArray(); // 카드 순서 랜덤
 
         for (int i = 0; i < 5; i++)
