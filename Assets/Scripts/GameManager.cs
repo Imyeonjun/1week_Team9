@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
     {
         if (firstCard.idx == secondCard.idx)
         {
-            firstCard.DestroyCard();
+            firstCard.DestroyCard(); // 첫번째 카드와 두번째 카드가 일치하면 파괴
             secondCard.DestroyCard();
             cardCount -= 2;
             if (cardCount == 0)
@@ -92,7 +92,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            firstCard.CloseCard();
+            firstCard.CloseCard(); // 다를 경우 일정 시간 후 뒤집힘
             secondCard.CloseCard();
         }
         firstCard = null;   
