@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     public GameObject endTxt;
     public GameObject goodendTxt;
 
+    public GameObject bonusButton;
+
     AudioSource audioSource;
     public AudioClip clip;
     public AudioClip clipfail;
@@ -90,21 +92,19 @@ public class GameManager : MonoBehaviour
     }
     public void Matched()
     {
+        Debug.Log(cardCount);
+        
 
-        if (firstCard.idx == secondCard.idx)
+        if (firstCard.idx == secondCard.idx)     
         {
-
-           
-
-
-           audioSource.PlayOneShot(clip);
+            audioSource.PlayOneShot(clip);
             firstCard.DestroyCard();
 
             secondCard.DestroyCard();
             cardCount -= 2;
             if (cardCount == 0)
             {
-                
+                bonusButton.SetActive(true);
                 Time.timeScale = 0.0f;
                 
             }
