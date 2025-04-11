@@ -63,6 +63,12 @@
 
 게임을 클리어 하면 구조성공! 텍스트가 나오고 팀원들의 카드가 나옵니다. 구조성공! 버튼을 누르면 RetryBtn스크립트가 작동해서 MainScene으로 이동합니다. 
 
+### ⚠️ 게임 실패 화면
+
+![실패 화면](https://github.com/Imyeonjun/1week_Team9/blob/main/%EA%B5%AC%EC%A1%B0%EC%8B%A4%ED%8C%A8.png?raw=true)
+
+게임 시간이 다 흐르고 카드를 다 못맞췄다면 구조 실패가 나옵니다. 구조실패! 버튼을 누르면 RetryBtn스크립트가 작동해서 MainScene으로 이동합니다. 
+
 ### 💡 보너스 스테이지
 
 ![보너스](https://github.com/Imyeonjun/1week_Team9/blob/main/%EB%B3%B4%EB%84%88%EC%8A%A4%EB%8B%A8%EA%B3%84.png?raw=true)
