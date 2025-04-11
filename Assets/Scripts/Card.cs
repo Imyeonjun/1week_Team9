@@ -95,3 +95,5 @@ public class Card : MonoBehaviour
         back.SetActive(true);
     }
 }
+
+// 테스트입니다.
