@@ -84,9 +84,6 @@ public class GameManager : MonoBehaviour
 
     public void Matched()
     {
-        Debug.Log(cardCount);
-        
-
         if (firstCard.idx == secondCard.idx)     
         {
             audioSource.PlayOneShot(clip);
