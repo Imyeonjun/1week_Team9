@@ -37,8 +37,6 @@
 ---
 ## 📸 게임 화면 예시
 
-![게임화면예시](https://github.com/Imyeonjun/1week_Team9/blob/main/CardGame.gif?raw=true)
-
 ---
 
 | 초기화면 | 카드 일부 공개 | 정답 매칭 성공 |
@@ -54,7 +52,6 @@
 - 제한 시간 내에 같은 이미지를 맞추는 카드 뒤집기 게임입니다.
 - 같은 그림을 찾으면 카드가 뒤집어지면서 사라집니다.
 
----
 ## 🟢 게임 시작 화면 (GIF)
 ![시작화면](https://github.com/Imyeonjun/1week_Team9/blob/Duekk/CardGif/StartScene2.gif?raw=true)
 
