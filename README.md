@@ -60,6 +60,15 @@
 
 게임을 클리어 하면 구조성공! 텍스트가 나오고 팀원들의 카드가 나옵니다. 구조성공! 버튼을 누르면 RetryBtn스크립트가 작동해서 MainScene으로 이동합니다. 
 
+### 💡 보너스 스테이지
+
+![보너스](https://github.com/Imyeonjun/1week_Team9/blob/main/%EB%B3%B4%EB%84%88%EC%8A%A4%EB%8B%A8%EA%B3%84.png?raw=true)
+
+![보너스](https://github.com/Imyeonjun/1week_Team9/blob/main/%EB%B3%B4%EB%84%88%EC%8A%A4%EB%8B%A8%EA%B3%842.png?raw=true)
+
+메인 스테이지를 클리어 시, 클리어 화면 우측 상단에 보너스 단계를 플레이할 수 있는 버튼이 생성됩니다. 해당 버튼을 누르면 즉시 보너스 스테이지로 이동합니다
+보너스 스테이지는 메인 스테이지와 구별할 수 있도록 밝은 노란색으로 배경을 입혔습니다.
+
 ---
 # 🔧 구현 기능
 
@@ -78,6 +87,8 @@
 ### 🌀 카드 뒤집기 애니메이션
 -  클릭 시 카드가 회전하며 이미지 표시
 -  Unity에서 Animator을 사용하여 카드가 뒤집히는 애니메이션 적용
+
+![애니메이션](https://github.com/Imyeonjun/1week_Team9/blob/main/animation.png?raw=true)
 
 ### ✅ 매칭 판정 로직
 - 두 장의 카드가 동일 이미지일 경우 고정
@@ -106,6 +117,7 @@
 - 이전 스테이지 클리어 시 다음 스테이지 해금
 - 스테이지별 카드 수/시간 차등 적용
 
+![스테이지](https://github.com/Imyeonjun/1week_Team9/blob/main/%EB%B3%B4%EB%84%88%EC%8A%A4%EB%8B%A8%EA%B3%84%EC%BD%94%EB%93%9C.png?raw=true)
 
 ---
 ## 🧪 향후 개선 계획 (TODO)
