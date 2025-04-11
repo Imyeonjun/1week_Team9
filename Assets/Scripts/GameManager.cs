@@ -11,26 +11,21 @@ public class GameManager : MonoBehaviour
     public Card firstCard;
     public Card secondCard;
 
-
-
-
     public Text timetxt;
+
     public GameObject endTxt;
     public GameObject goodendTxt;
-
     public GameObject bonusButton;
 
     AudioSource audioSource;
     public AudioClip clip;
     public AudioClip clipfail;
     public AudioClip clipcomplete;
+
     private bool hasPlayed = false;
 
     public int cardCount = 0;
-     float time = 40.0f;
-
-
-
+    float time = 40.0f;
 
     private void Awake()
     {
@@ -40,16 +35,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
-
-    // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 1.0f;
         audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         time -= Time.deltaTime;
@@ -82,14 +73,15 @@ public class GameManager : MonoBehaviour
             }
             StartCoroutine(EndGameAfterDelay(1.0f));
             Time.timeScale = 0.0f;
-
         }
     }
+
     IEnumerator EndGameAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
         Time.timeScale = 0.0f;
     }
+
     public void Matched()
     {
         Debug.Log(cardCount);
@@ -99,14 +91,12 @@ public class GameManager : MonoBehaviour
         {
             audioSource.PlayOneShot(clip);
             firstCard.DestroyCard();
-
             secondCard.DestroyCard();
             cardCount -= 2;
             if (cardCount == 0)
             {
                 bonusButton.SetActive(true);
                 Time.timeScale = 0.0f;
-                
             }
         }
         else
